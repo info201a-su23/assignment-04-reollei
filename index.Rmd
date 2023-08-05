@@ -1,5 +1,6 @@
 ---
-title: "A3: Incarceration"
+title: "A4: Incarceration"
+author: "Leila Peitsch"
 output: html_document
 ---
 
@@ -8,6 +9,9 @@ output: html_document
 An introduction of the problem domain and a description of the variable(s) you are choosing to analyze (and why!)
 
 ### Summary Information
+
+``````{r, echo = FALSE, code = readLines("summary.R")}
+```
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
@@ -59,6 +63,9 @@ The second chart that you will create and include will show how two different (c
 - The chart needs a clear title 
 - If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
 
+``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+```
+
 ### Map
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
@@ -69,3 +76,5 @@ The last chart that you will create and include will show how a variable is dist
 - Your color scale needs a legend with a clear label
 - Use a map based coordinate system to set the aspect ratio of your map
 
+``````{r, echo = FALSE, code = readLines("map_example.R")}
+```
