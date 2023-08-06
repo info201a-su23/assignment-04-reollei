@@ -1,3 +1,6 @@
+# Line graph that plots jail populations of different races 
+# over time (2000-2018)
+
 # Load packages
 library(ggplot2)
 
@@ -24,7 +27,7 @@ chart_df <- chart_df %>%
                                       values_to='pop')
 
 # Plot data
-ggplot(data = chart_df, aes(x = year, y = pop, group = race)) + 
+plot1 <- ggplot(data = chart_df, aes(x = year, y = pop, group = race)) + 
   geom_line(aes(color = race), linewidth = 0.7) + 
   xlab("Year") +
   ylab("Jail Population") +

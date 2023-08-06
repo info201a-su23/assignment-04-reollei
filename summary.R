@@ -1,13 +1,9 @@
-# Load packages
-library(tidyverse)
-library(dplyr)
+## Summary Information
 
 # Load datasets
 prison_pop <- read.csv('https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-prison-pop.csv?raw=true')
 jail_pop <- read.csv('https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-jail-pop.csv?raw=true')
 pop_rate_100k <- read.csv('https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-prison-jail-rates.csv?raw=true')
-pop_rate_100k_in_90s <- read.csv('https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-prison-jail-rates-1990.csv?raw=true')
-pop_rate_100k_in_90s_WA <- read.csv('https://github.com/melaniewalsh/Neat-Datasets/raw/main/us-prison-jail-rates-1990-WA.csv')
 
 # Note:
 #   Jail holds people awaiting trial/sentencing
