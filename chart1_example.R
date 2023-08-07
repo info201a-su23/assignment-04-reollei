@@ -31,8 +31,8 @@ plot1 <- ggplot(data = chart_df, aes(x = year, y = pop, group = race)) +
   geom_line(aes(color = race), linewidth = 0.7) + 
   xlab("Year") +
   ylab("Jail Population") +
+  scale_y_continuous(labels = scales::comma) +
   ggtitle("Jail Populations in Georgia") +
   theme(plot.title = element_text(hjust=0.5)) +
   scale_color_manual(name = "Race", labels = c("Black", "Other", "White"), 
                      values = c('firebrick', 'cornflowerblue', 'darkseagreen4'))
-

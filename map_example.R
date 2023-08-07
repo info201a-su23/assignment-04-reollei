@@ -33,6 +33,7 @@ map_df_temp <- left_join(map_df, state)
 
 # Plot data using ggplot2
 map <- ggplot(map_df_temp) +
+  coord_fixed(1.3) +
   geom_polygon(aes(x = long, y = lat, group = group, fill = black_jail_pop), color = "lightblue4") +
   scale_fill_continuous(low = "lightblue1", high = "lightblue4", 
                         name = "Black Jail Pop.", label = scales::comma) +

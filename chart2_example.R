@@ -17,4 +17,6 @@ chart2_df <- chart2_df %>%
 plot2 <- ggpairs(chart2_df, columns = 2:5,
         title = "Comparing White/Black and Female/Male Jail Pop.", 
         columnLabels = c("White", "Black", "Female", "Male")) +
-  theme(plot.title = element_text(hjust = 0.5))
+  theme(plot.title = element_text(hjust = 0.5), axis.text = element_blank(),
+        axis.ticks = element_blank())
+
