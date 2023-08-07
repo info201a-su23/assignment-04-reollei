@@ -32,15 +32,19 @@ demographics within the jail.
 source("summary.R")
 ```
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-
-These will likely be calculated using your DPLYR skills, answering questions such as: 
-
-- What is the average value of my variable across all the counties (in the current year)?
-- Where is my variable the highest / lowest?
-- How much has my variable change over the last N years?
-
-Feel free to calculate and report values that you find relevant. Again, remember that the purpose is to think about how these measure of incarceration vary by race.
+When observing the demographics with those incarcerating in local jails, it is
+important to keep in mind how the individuals' race, age, and location can
+affect how these statistics change between state lines. For example, the state
+with the highest jail population within urban neighborhoods (defined as one of 
+the core counties of a metropolitan area with about a million people) was 
+`r high_urban_state_jail_pop`.
+However, the state with the highest jail population within rural neighborhoods 
+(defined as non-metro areas with less than 10,000 people) was 
+`r high_rural_state_jail_pop`.
+Based on state demographics, `r high_rural_state_jail_pop` has the highest 
+black population in the US, despite the group only making up [12% of the total population](https://blackdemographics.com/population/black-state-population/).
+Looking at the jail populations across races in Texas, specifically that of 
+white and black populations, the highest reported 
 
 ### The Dataset
 
@@ -86,7 +90,7 @@ The second chart that you will create and include will show how two different (c
 
 ```{r pop scatterplot, echo = FALSE, message = FALSE}
 source("chart2_example.R")
-plot(plot2)
+print(plot2)
 ```
 
 ### Map
@@ -99,7 +103,7 @@ The last chart that you will create and include will show how a variable is dist
 - Your color scale needs a legend with a clear label
 - Use a map based coordinate system to set the aspect ratio of your map
 
-```{r pop over time, echo = FALSE, message = FALSE}
+```{r map, echo = FALSE, message = FALSE}
 source("map_example.R")
 plot(map)
 ```
